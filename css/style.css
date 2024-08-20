@@ -1,0 +1,337 @@
+
+
+
+:root{
+    --color-primario: #353535;
+    --color-secundario: #FFFFFF;
+    --color-terciario: #284B63;
+    --color-cuarto: #3C6E71;
+    --color-quinto: #D9D9D9;
+    --sombra: #252422;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    background: var(--color-primario);
+    font-family: "Inter";
+}
+
+body{
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 50px;
+    height: 50px;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.presentacion{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+ .area-texto{
+    width: 660px;
+    height: 288px;
+    font-size: 32px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    line-height: 48px;
+    resize: none;
+ }
+ .area-texto::placeholder,:focus{
+    color: var(--color-secundario);
+ }
+
+
+
+.img-aviso{
+    width: 16px;
+}
+.area-instruccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.instruccion{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0,8;
+    color: var(--color-quinto);
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    top: 526px;
+
+}
+
+.boton-encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-quinto);
+    background: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.boton-encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-primario),
+    inset -3px -4px 8px var(--color-terciario);
+    color: var(--color-secundario);
+    font-size: 15px;
+}
+
+.boton-desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-quinto);
+    border: 1px solid var(--color-quinto);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.boton-copiar:active,
+.boton-desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-primario),
+    inset -3px -4px 8px var(--color-quinto);
+    color: var(--color-primario);
+    font-size: 15px;
+}
+
+.respuesta{
+    width: 270px;
+    height: 580px;
+    background-image: url(/assets/detective.png);
+    background-repeat: no-repeat;
+    background-color: var(--color-cuarto);
+    background-size: 50%;
+    background-position: center;
+    box-shadow: 5px 10px 10px 5px var(--sombra);
+    position: relative;
+    margin-top: 30px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+
+.segunda-instruccion{
+    width: 250px;
+    margin: auto;
+    margin-top: 145%;
+    background: var(--sombra);
+}
+
+.texto-uno{
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 120%;
+   text-align: center;
+   color: var(--color-primario);
+   background: var(--color-cuarto);
+
+}
+
+.texto-dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-primario);
+    background: var(--color-cuarto);
+}
+
+.mensaje{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-quinto);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+.evaluar:focus{
+    outline: none;
+}
+
+.boton-copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--color-quinto);
+    border: 1px solid var(--color-cuarto);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--color-quinto);
+    color: var(--color-quinto);
+    text-align: center;
+    height: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-quinto);
+}
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .presentacion{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .botones{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .area-instruccion{
+        position: inherit;
+        margin: 15px;  
+    }
+
+    .respuesta{
+       width: 665px;
+       height: 300px;
+       display: flex;
+       justify-content: center;
+       align-items: flex-end;
+       background-image: none;
+    }
+
+    .segunda-instruccion{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .boton-copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .mensaje{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px){
+        
+        .logo{
+            width:100%;
+            background: var(--color-primario);
+            padding: 2px;
+        }
+
+        .presentacion{
+            width: 90%;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .area-texto{
+            width: 90%;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .botones{
+            display: grid;
+            gap: 21px;
+        }
+
+        .respuesta{
+            width: 90%;
+        }
+
+        .datos{
+            font-size: 15px;
+        }
+}
+
